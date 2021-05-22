@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/*CONFIGURAÇÕES PADRÕES*/
+
+body, html {
+    margin: 0;
+    font: 16px 'Lato', sans-serif;
+    background-color: rgb(248, 139, 23);
+    color: #777;
+    height: 100%;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.navegacao {
+    color: black;
+    padding: 10px 10px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.conteudo {
+    color: white;
+    text-align: justify;
+    padding: 50px 80px;
+
+}
+
+h3 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+/*CONFIGURAÇÕES PARALLAX*/
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6 {
+    position: relative;
+    height: 100%;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover; /*Para imagem ocupar toda tela*/
+    background-position: center; /*Para imagem fica no centro*/
+    background-attachment: fixed; /*FAZER COM QUE A IMAGEM FIQUE FIXA ATINGINDO O OBJETICO*/
+}
+
+.caixa1 {
+    background-image: url(midias/camaratania.PNG);
+
+
+}
+
+.caixa2 {
+    background-image: url(midias/pexels-kenex-media-sa-3207532\ \(1\).jpg);
+}
+
+.caixa3 {
+    background-image: url(midias/quem_e_Tania_1880x1248.png);
+}
+
+.caixa4 {
+    background-image: url(midias/menino2_1880x1248.png);
+}
+
+.caixa5 {
+    background-image: url(midias/tdscontrapedofilia.png);
+}
+
+.caixa6 {
+    background-image: url(midias/infos/oqeta2.png);
+}
+
+.conteudo-titulo {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    color: white;
+    background-color: #ff99009e;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.conteudo_infos {
+    color: white;
+    background-color: rgb(248, 139, 23);
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+.img-infos {
+    margin: auto;
+    text-align: center;
+    padding-left: 120px;
+    
+}
+
+#lbn1 {
+    padding: 90px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 35pt;
+    padding-left: 250px;
+}
+
+#lbn2 {
+    padding: 90px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 35pt;
+    padding-left: 50px;
+}
+
+#lb1 {
+
+    text-align: center;
+    font-size: 15pt;
+    padding-left: 200px;
+
+}
+
+#lb2 {
+
+    text-align: center;
+    font-size: 15pt;
+    padding-left: 90px;
+}
+
+#imgbtplay {
+    text-align: center;
+    margin: auto;
+    padding-left: 40%;
+}
+
+.conteudovideo {
+    color: white;
+    text-align: justify;
+    padding: 50px 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(midias/teeeee2.png);
+
+}
+
+
+a#textobtplay {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 18pt;
+
+}
+
