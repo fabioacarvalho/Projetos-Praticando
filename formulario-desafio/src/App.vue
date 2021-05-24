@@ -12,19 +12,13 @@
 				<!-- Senha -->
 				<!-- Armazenar Dados? (Sim/Não) -->
 				
-				<Rotulo  nome="Nome">
-					<input type="text" v-model="usuario.nome">
-				</Rotulo>
-
-				<Rotulo nome="Sobrenome">
-					<input type="text" v-model="usuario.sobrenome">
-				</Rotulo>
+				<NomeCompleto v-model="nomeCompleto"/>
 
 				<Rotulo nome="Email">
-					<input type="email" name="email" id="email" v-model="usuario.email">
+					<input type="email" name="email" id="email" v-model="email">
 				</Rotulo>
 				<Rotulo nome="Senha">
-					<input type="password" name="senha" id="senha" v-model="usuario.senha">
+					<input type="password" name="senha" id="senha" v-model="senha">
 				</Rotulo>
 				<Rotulo nome="Armazenar Dados">
 					<span><input type="radio" value="Sim" name="sim" id="sim" v-model="armazenar">Sim</span>
@@ -48,14 +42,17 @@
 			</form>
 			<div class="painel" v-else>
 				<div class="cabecalho">Resultado</div>
-				<Rotulo  nome="Nome e Sobrenome">
-					<span>{{ usuario.nome }} {{ usuario.sobrenome }}</span>
+				<Rotulo  nome="Nome">
+					<span>{{ nomeCompleto.nome }}</span>
+				</Rotulo>
+				<Rotulo  nome="Sobrenome">
+					<span>{{ nomeCompleto.sobrenome }}</span>
 				</Rotulo>
 				<Rotulo nome="Email">
-					<span>{{ usuario.email }}</span>
+					<span>{{ email }}</span>
 				</Rotulo>
 				<Rotulo nome="Senha">
-					<span>{{ usuario.senha }}</span>
+					<span>{{ senha }}</span>
 				</Rotulo>
 				<Rotulo nome="Armazenar Dados">
 					<span>
@@ -71,10 +68,11 @@
 
 <script>
 import Rotulo from './components/Rotulo.vue'
+import NomeCompleto from './components/NomeCompleto.vue'
 
 export default {
 	name: 'app',
-	components: { Rotulo },
+	components: { NomeCompleto, Rotulo },
 	methods: {
 		enviar() {
 			this.enviado = true
@@ -86,12 +84,12 @@ export default {
 	data() {
 		return {
 			armazenar: 'Sim',
-			usuario: {
+			nomeCompleto: {
 				nome: '',
-				sobrenome: '',
-				email: '',
-				senha: ''
+				sobrenome: ''
 			},
+			email: '',
+			senha: '',
 			enviado: false,
 		}
 	}
